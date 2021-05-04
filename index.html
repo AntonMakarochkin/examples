@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@800&family=Jost:wght@300;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fd2eb4703d.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="indicator"></div>
+    <div class="mine">
+
+        <div class="border-blocks"></div>
+        <div class="border-blocks-center">
+            <div class="door-1"></div>
+            <div class="door-2"></div>
+            <img src="img/go.svg"  onclick="new Audio('sound/otkr1.wav').play(); return false;">
+        </div>
+        <div class="border-blocks">
+           <div class="menu">
+               <button class="ide">
+                   
+               </button>
+           </div>
+        </div>
+        
+    </div>
+    <div  id="popupfirst">
+       
+        <div class="content">
+            <p>Скилы</p>
+           <div class="skils">
+              
+               <div class="skil">
+                   <ul>
+                       <li>CSS</li>
+                       <li>HTML</li>
+                   </ul>
+               </div>
+               <div class="skil">
+                <ul>
+                    <li>JS</li>
+                    <li>Blender <br> Fucion360</li>
+                </ul>
+            </div>
+            <div class="skil">
+                <ul>
+                    <li>jpeg/svg</li>
+                    <li>аудио/видео редакторы</li>
+                </ul>
+            </div>
+           </div>
+           <div class="swot">
+               <div class="upmenu">
+                   <div class="tabs">Сильные</div>
+                   <div class="tabs">Слабые</div>
+               </div>
+               <div class="downmenu">
+                   <div class="tab-item">
+                       <ul>
+                           <li>Самостоятельно обучаюсь</li>
+                           <li>Желание развиваться</li>
+                           <li>Довожу дело до конца</li>
+                           <li>Адекватность</li>
+                           <li>Гибкость</li>
+                       </ul>
+                   </div>
+                   <div class="tab-item">
+                    <ul>
+                        <li>Отсутствие мастерства [Мало опыта]</li>
+                            
+                    </ul>
+                </div>
+               </div>
+           </div>
+           <div id="btn" class="next" onclick="new Audio('sound/lift1.wav').play(); return false;">Далее</div>
+           
+            
+           
+        </div>
+       
+        <div class="next"></div>
+    </div>
+    <div id="popupsecond">
+        <p class="text">Отличный способ научитсья что-то делать - сделать это несколько раз</p>
+        <p class="text">Я не питаю ожиданий по поводу безграничной необычности и уникальности предстоящих работ, но я понимаю что только через обилие работы и при ее цикличности можно достичь высокого уровня навыков</p>
+        <p class="text">Моя основная мотивация - профессионально развиваться, что принесет обоюдную пользу как мне так и компании</p>
+        <span  class="next-2" id="btn2" onclick="new Audio('sound/lift1.wav').play(); return false;"> Далее</span>
+    </div>
+    <div class="toggle"> Вкл/Выкл Скролл</div>
+
+    <div class="refresh"><i class="fas fa-sync-alt"></i></div>
+
+    <video id="myVideo">
+        <source src="video/Всё начинается с поиска.mp4" type="video/mp4">
+      </video>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script defer src="main.js"></script>
+</body>
+</html>
+

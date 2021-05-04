@@ -1,0 +1,432 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@800&family=Source+Sans+Pro:wght@900&display=swap');
+
+body{
+    background: url(img/h4d2uE7-JqM.jpg) 0 0 repeat;
+    font-family: 'Inter', sans-serif;
+    overflow-y: hidden;
+
+}
+
+.mine{
+    background-color: #9e9e9e;
+    margin: 0 auto;
+    width: 700px;
+    height: 4000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.indicator{
+    background-color: darkcyan;
+    margin: 0 auto;
+    width: 700px;
+    height: 200px;
+    background: url(img/indicator.jpg) 0 0 repeat-y;
+    background-size:contain;
+}
+
+.border-blocks{
+ 
+  
+    background-color: rgb(131, 228, 228);
+    height: 4000px;
+    width: 25%;
+    z-index: 3;
+    background: url(img/stenka.jpg) 0 0 repeat-y;
+    background-size:contain;
+    box-shadow:
+    0 104px 132px rgba(0, 0, 0, 0.77)
+  ;
+  
+  
+
+}
+.border-blocks-center{
+    width: 60%;
+    background-color: brown;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: url(img/7e11f57921e80c728928eb371210d006.jpg) 20px 0 repeat;
+    background-size:contain;
+   
+}
+.border-blocks-center img{
+  position: absolute;
+ 
+ height: 500px;
+ width: 370px;
+
+ margin: 0 auto;
+}
+.border-blocks-center img:hover{
+    transform: translate(0px, 20px);
+    transition: 0.5s linear;
+  }
+.img-hover{
+    opacity: 0;
+    transform: opacity 3s;
+}
+
+.door-1, .door-2  {
+   
+    background-color: darkgreen;
+    width: 50%;
+    height: 500px;
+    margin: 0 auto;
+    z-index: 2;
+    transform: translate(0px, 0px);
+    transition: 1s ease;  
+    box-shadow:
+    0 0.3px 5.1px -10px rgba(238, 0, 0, 0.664),
+    0 0.8px 14.1px -10px rgb(0, 0, 0),
+    0 1.8px 34.1px -10px rgb(0, 0, 0),
+    0 6px 113px -10px rgb(0, 0, 0);
+  
+
+
+}
+.door-1{
+    
+    background: url(img/dver-left.jpg) -8px 0 repeat;
+    background-size:cover;
+}
+.door-2{
+
+    background: url(img/dver-right.jpg) 0 0 repeat;
+    background-size:cover;
+}
+.door-1-drug{
+  transform: translate(-50%, 0px);
+  transition: 3s ease;
+  border-right: none;
+}
+.door-2-drug{
+    transform: translate(50%, 0px);
+    transition: 3s linear;
+    border-right: none;
+}
+.door-move{
+    transform: translate(0px, 1300px);
+    transition: 3s linear;
+  }
+.door-move-2{
+  transform: translate(0px, 2650px);
+  transition: 3s linear;
+  }
+  .door-move-3{
+    transform: translate(0px, 4100px);
+    transition: 3s linear;
+    }
+
+.menu{
+    background-color: brown;
+    position: relative;
+    height: 80px;
+    width: 50px;
+    border: none;
+    top: 200px;
+    left: 20px;
+    
+    background: url(img/knopka.jpg) 0 0 repeat;
+    background-size:cover;
+    border: 2px solid rgba(0, 0, 0, 0.377);
+}
+
+.menu > button{
+    background-color: rgb(173, 0, 0);
+    position: relative;
+    height: 20px;
+    width: 20px;
+    border: none;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid rgb(202, 0, 0);
+ 
+    
+}
+
+.menu > button:hover{
+    background-color: rgb(0, 255, 85);
+
+    
+}
+
+#popupfirst{
+    visibility: hidden;
+    border-radius: 22px;
+    opacity: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(
+        211deg,
+        hsl(235.9, 100%, 77.06%) 0%,
+        hsl(236.03, 99.77%, 76.31%) 10.2%,
+        hsl(236.16, 99.55%, 75.52%) 18.4%,
+        hsl(236.29, 99.34%, 74.68%) 25.2%,
+        hsl(236.42, 99.14%, 73.8%) 30.7%,
+        hsl(236.53, 98.95%, 72.89%) 35.3%,
+        hsl(236.64, 98.78%, 71.94%) 39.2%,
+        hsl(236.74, 98.62%, 70.97%) 42.9%,
+        hsl(236.83, 98.48%, 69.97%) 46.6%,
+        hsl(236.9, 98.35%, 68.95%) 50.7%,
+        hsl(236.97, 98.23%, 67.92%) 55.4%,
+        hsl(237.02, 98.14%, 66.89%) 61.1%,
+        hsl(237.06, 98.05%, 65.86%) 68.1%,
+        hsl(237.08, 97.98%, 64.84%) 76.7%,
+        hsl(237.09, 97.93%, 63.87%) 87.2%,
+        hsl(237.08, 97.88%, 62.94%) 100%
+        );
+    
+    height: 700px;
+    width: 700px;
+    transition: 0.3s ease;
+    z-index: 5;
+    
+      
+      
+
+}
+
+
+#popupsecond{
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(img/fon2.jpg);
+    object-fit: cover;
+    height: 800px;
+    width: 700px;
+    transition: 0.3s ease;
+    z-index: 5;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.popupfirst-active{
+    opacity: 1;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    color: rgba(255, 245, 238, 0.76);
+}
+
+.skils{
+    width: 95%;
+    height: 33%;
+    background-color: rgba(180, 195, 241, 0.164);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 17px;
+    border-radius: 10px;
+    
+    
+}
+.skil{
+ 
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skil > ul > li{
+    padding: 15px 20px;
+    font-family: 'Jost', sans-serif;
+     font-size: 30px;
+     margin: 10px 0 10px 0;
+
+
+}
+.swot{
+    width: 100%;
+    height: 33%;
+    display: flex;
+    flex-direction: column;
+}
+.upmenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(180, 195, 241, 0.164);
+    font-size: 40px;
+    padding: 10px 10px;
+    margin: 1px 15px;
+    font-family: 'Exo 2', sans-serif;
+    border-radius: 10px;
+    
+}
+.downmenu{
+    list-style-type: none;
+    font-size: 30px;
+    padding: 0px 10px;
+    margin: 0px 10px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Jost', sans-serif;
+    
+}
+.tab-item > ul > li{
+    padding: 5px 0px;
+    margin: 0 0 0 5px;
+}
+.tabs:hover{
+color: rgb(255, 215, 253);
+transition: 0.2s;
+cursor: pointer;
+
+}
+
+.next{
+    width: 100%;
+    height: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    cursor: pointer;
+    font-family: 'Exo 2', sans-serif;
+}
+.next:hover{
+    color: rgb(255, 215, 253);
+}
+.active{
+    color: rgb(236, 11, 161);
+}
+
+.content p{ 
+    margin: 0 auto;
+    padding: 14px 0px;
+    font-size: 40px;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.next-2{
+    color: rgb(225, 255, 252);
+    width: 25%;
+    height: 25%;
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 30px;
+    font-family: 'Exo 2', sans-serif;
+    cursor: pointer;
+    transition: 0.2s;
+
+}
+.next-2:hover{
+    color: rgb(252, 173, 248);
+  
+
+}
+.text{
+    width: 90%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.726);
+    color: white;
+   font-size: 30px;
+   font-family: 'Jost', sans-serif;
+   margin: 15px 15px;
+   padding: 10px 5px;
+   border-radius: 18px;
+   text-align: center;
+   font-weight: 600;
+
+
+}
+.toggle{
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    width: 100px;
+    height: 80px;
+    background-color: rgba(226, 226, 226, 0.205);
+    color:rgb(255, 255, 255) ;
+    border-radius: 18px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 17px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.toggle:hover{
+    color: rgba(255, 170, 241, 0.808);
+    background-color: rgba(240, 255, 255, 0.24);
+}
+.newbg{
+    overflow-y: visible;
+}
+
+body::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #1e1e24;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: #faf9ff;
+  }
+
+
+  #myVideo {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 10;
+    transition: all 0.5s;
+}
+
+.refresh{
+    position: fixed;
+    top: 150px;
+    left: 50px;
+    width: 100px;
+    height: 80px;
+    background-color: rgba(226, 226, 226, 0.205);
+    color:rgb(255, 255, 255) ;
+    border-radius: 18px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 37px;
+    cursor: pointer;
+    transition: all 0.2s;
+
+}
+.refresh:hover{
+    color: rgba(255, 170, 241, 0.808);
+    background-color: rgba(240, 255, 255, 0.24);
+}
+
+
